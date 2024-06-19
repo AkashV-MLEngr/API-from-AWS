@@ -8,9 +8,9 @@ from flask_marshmallow import Marshmallow
 app = Flask(__name__)
 CORS(app)
 dbConnection = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='Akash@24',
+    host='api-db.cnica2ouqc9r.eu-north-1.rds.amazonaws.com',
+    user='admin',
+    password='akash123',
     database='database'
 )
 cursor = dbConnection.cursor(dictionary=True)
